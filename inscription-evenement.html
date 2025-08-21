@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inscription à un événement - IDC</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <nav class="nav">
+        <div class="nav-container">
+          <div class="nav-logo">
+            <a href="index.html"
+              ><img src="Images/IDC-TRANSPARENT-NOIR.png" alt="Logo"
+            /></a>
+          </div>
+          <div class="nav-menu" id="nav-menu">
+            <ul class="nav-list">
+              <li><a href="index.html" class="nav-link">Accueil</a></li>
+              <li><a href="a-propos.html" class="nav-link">À-propos</a></li>
+              <li><a href="galerie.html" class="nav-link">Galerie</a></li>
+              <li>
+                <a href="evenements.html" class="nav-link active">Événements</a>
+              </li>
+              <li>
+                <a href="projets-sociaux.html" class="nav-link"
+                  >Projets sociaux</a
+                >
+              </li>
+              <li><a href="blog.html" class="nav-link">Blog</a></li>
+              <li><a href="boutique.html" class="nav-link">Boutique</a></li>
+              <li><a href="contact.html" class="nav-link">Contact</a></li>
+              <li>
+                <a href="don.html" class="nav-link btn-don">Faire un don</a>
+              </li>
+            </ul>
+          </div>
+          <div class="nav-toggle" id="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <section class="section">
+        <div class="container">
+          <div class="form-container"><br><br>
+            <h1 class="form-title">Inscription à un événement</h1>
+            <p class="form-description">
+              Remplissez le formulaire ci-dessous pour réserver votre place.
+            </p>
+            <div class="section-separator"></div>
+
+            <form id="inscriptionForm" action="#" method="POST">
+              <div class="form-group">
+                <label for="event">Événement</label>
+                <select id="event" name="event" required>
+                  <option value="">-- Choisissez un événement --</option>
+                  <option value="afterworks">Afterworks</option>
+                  <option value="conference-peres">Conférence Des Pères</option>
+                  <option value="we-are-one">WE ARE ONE</option>
+                  <option value="conference-familles">
+                    Conférence des familles
+                  </option>
+                  <option value="boys-camp">Boy's Camp</option>
+                  <option value="brunch">Brunch</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="fullname">Nom complet</label>
+                <input
+                  type="text"
+                  id="fullname"
+                  name="fullname"
+                  placeholder="Ex: Jean Konan"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Adresse e-mail</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Ex: jean.Konan@email.com"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="phone">Numéro de téléphone</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="Ex: 01 02 03 04 05"
+                />
+              </div>
+              <div class="form-group">
+                <label for="tickets">Nombre de places</label>
+                <input
+                  type="number"
+                  id="tickets"
+                  name="tickets"
+                  value="1"
+                  min="1"
+                  max="10"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="message">Message (optionnel)</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  placeholder="Avez-vous des questions ou des demandes particulières ?"
+                ></textarea>
+              </div>
+              <div class="form-actions">
+                <button type="submit" class="btn btn-primary">
+                  Confirmer l'inscription
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <!-- Le code de votre footer est identique à celui de la page evenements.html -->
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="footer-logo">
+              <h3>IDC</h3>
+            </div>
+            <p>
+              Organisation dédiée au développement communautaire chrétien et aux projets
+              sociaux.
+            </p>
+            <div class="social-links">
+              <a href="#" class="social-link"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="social-link"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h4>Navigation</h4>
+            <ul class="footer-links">
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="a-propos.html">À-propos</a></li>
+              <li><a href="galerie.html">Galerie</a></li>
+              <li><a href="evenements.html">Événements</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Services</h4>
+            <ul class="footer-links">
+              <li><a href="projets-sociaux.html">Projets sociaux</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="boutique.html">Boutique</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Légal</h4>
+            <ul class="footer-links">
+              <li><a href="mentions-legales.html">Mentions légales</a></li>
+              <li>
+                <a href="politique-confidentialite.html"
+                  >Politique de confidentialité</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 IDC. Tous droits réservés.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+      // Ce script sélectionne automatiquement le bon événement dans la liste déroulante
+      // en fonction du bouton sur lequel l'utilisateur a cliqué.
+      document.addEventListener("DOMContentLoaded", () => {
+        const urlParams = new URLSearchParams(window.location.search);
+        const event = urlParams.get("event");
+        if (event) {
+          const eventSelect = document.getElementById("event");
+          if (eventSelect) {
+            eventSelect.value = event;
+          }
+        }
+      });
+    </script>
+    <script src="form-handler.js"></script>
+  </body>
+</html>

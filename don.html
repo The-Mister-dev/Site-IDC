@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Faire un don - IDC</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="icon" type="image/png" href="Images/IDC-TANSPARENT.png" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <nav class="nav">
+        <div class="nav-container">
+          <div class="nav-logo">
+            <a href="index.html"
+              ><img src="Images/IDC-TRANSPARENT-NOIR.png" alt="Logo"
+            /></a>
+          </div>
+          <div class="nav-menu" id="nav-menu">
+            <ul class="nav-list">
+              <li><a href="index.html" class="nav-link">Accueil</a></li>
+              <li><a href="a-propos.html" class="nav-link">À-propos</a></li>
+              <li><a href="galerie.html" class="nav-link">Galerie</a></li>
+              <li><a href="evenements.html" class="nav-link">Événements</a></li>
+              <li>
+                <a href="projets-sociaux.html" class="nav-link"
+                  >Projets sociaux</a
+                >
+              </li>
+              <li><a href="blog.html" class="nav-link">Blog</a></li>
+              <li><a href="boutique.html" class="nav-link">Boutique</a></li>
+              <li><a href="contact.html" class="nav-link">Contact</a></li>
+              <li>
+                <a href="don.html" class="nav-link btn-don active"
+                  >Faire un don</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="nav-toggle" id="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <h1 class="page-title fade-in">Soutenez nos actions</h1>
+          <div class="section-separator"></div>
+          <p class="page-description fade-in">
+            Votre générosité nous permet de continuer notre mission
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="donation-wrapper">
+            <div class="donation-info fade-in">
+              <h2>Pourquoi faire un don ?</h2>
+              <div class="impact-item">
+                <div class="impact-icon">
+                  <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="impact-text">
+                  <h3>Éducation</h3>
+                  <p>
+                    Vos dons nous permettent de financer des programmes
+                    éducatifs pour les enfants défavorisés.
+                  </p>
+                </div>
+              </div>
+              <div class="impact-item">
+                <div class="impact-icon">
+                  <i class="fas fa-hand-holding-heart"></i>
+                </div>
+                <div class="impact-text">
+                  <h3>Aide sociale</h3>
+                  <p>
+                    Nous soutenons les familles en difficulté avec des
+                    programmes d'aide alimentaire et sociale.
+                  </p>
+                </div>
+              </div>
+              <div class="impact-item">
+                <div class="impact-icon">
+                  <i class="fas fa-seedling"></i>
+                </div>
+                <div class="impact-text">
+                  <h3>Environnement</h3>
+                  <p>
+                    Nos projets environnementaux contribuent à un avenir plus
+                    durable pour tous.
+                  </p>
+                </div>
+              </div>
+
+              <div class="donation-amounts">
+                <h3>Impact de votre don</h3>
+                <div class="amount-example">
+                  <span class="amount">100 FCFA</span>
+                  <span class="impact">= Soutien ponctuel</span>
+                </div>
+                <div class="amount-example">
+                  <span class="amount">500 FCFA</span>
+                  <span class="impact">= Participation aux frais</span>
+                </div>
+                <div class="amount-example">
+                  <span class="amount">1000 FCFA</span>
+                  <span class="impact">= Contribution significative</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="donation-form-wrapper fade-in">
+              <form class="donation-form" id="donation-form">
+                <h2>Formulaire de don</h2>
+
+                <div class="form-section">
+                  <h3>Informations personnelles</h3>
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label for="firstName">Prénom *</label>
+                      <input
+                        type="text"
+                        id="firstName"
+                        name="firstName"
+                        required
+                      />
+                      <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                      <label for="lastName">Nom *</label>
+                      <input
+                        type="text"
+                        id="lastName"
+                        name="lastName"
+                        required
+                      />
+                      <span class="error-message"></span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required />
+                    <span class="error-message"></span>
+                  </div>
+                  <div class="form-group">
+                    <label for="phone">Téléphone</label>
+                    <input type="tel" id="phone" name="phone" />
+                  </div>
+                </div>
+
+                <div class="form-section">
+                  <h3>Montant du don</h3>
+                  <div class="amount-buttons">
+                    <button type="button" class="amount-btn" data-amount="100">
+                      100 FCFA
+                    </button>
+                    <button type="button" class="amount-btn" data-amount="500">
+                      500 FCFA
+                    </button>
+                    <button type="button" class="amount-btn" data-amount="1000">
+                      1000 FCFA
+                    </button>
+                    <button type="button" class="amount-btn" data-amount="">
+                      Autre
+                    </button>
+                  </div>
+                  <div class="form-group">
+                    <label for="amount">Autre montant (FCFA) *</label>
+                    <input
+                      type="number"
+                      id="amount"
+                      name="amount"
+                      min="100"
+                      step="100"
+                      required
+                    />
+                    <span class="error-message"></span>
+                  </div>
+                </div>
+
+                <div class="form-section">
+                  <h3>Mode de paiement</h3>
+                  <div class="form-group">
+                    <div class="payment-options">
+                      <label class="payment-option">
+                        <input
+                          type="radio"
+                          name="payment"
+                          value="moov"
+                          checked
+                        />
+                        <span class="payment-text">
+                          <i class="fas fa-mobile-alt"></i>
+                          Moov Money
+                        </span>
+                      </label>
+                      <label class="payment-option">
+                        <input type="radio" name="payment" value="mtn" />
+                        <span class="payment-text">
+                          <i class="fas fa-mobile-alt"></i>
+                          MTN Money
+                        </span>
+                      </label>
+                      <label class="payment-option">
+                        <input type="radio" name="payment" value="orange" />
+                        <span class="payment-text">
+                          <i class="fas fa-mobile-alt"></i>
+                          Orange Money
+                        </span>
+                      </label>
+                      <label class="payment-option">
+                        <input type="radio" name="payment" value="wave" />
+                        <span class="payment-text">
+                          <i class="fas fa-wave-square"></i>
+                          Wave CI
+                        </span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="newsletter" />
+                    <span class="checkbox-text"
+                      >Je souhaite recevoir des nouvelles de vos actions</span
+                    >
+                  </label>
+                </div>
+
+                <div class="form-group">
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="terms" required />
+                    <span class="checkbox-text"
+                      >J'accepte les
+                      <a href="mentions-legales.html">conditions générales</a>
+                      *</span
+                    >
+                  </label>
+                  <span class="error-message"></span>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-large">
+                  Faire un don
+                </button>
+
+                <p class="form-note">
+                  <i class="fas fa-shield-alt"></i>
+                  Vos données sont sécurisées et votre don est déductible des
+                  impôts selon la législation en vigueur.
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="footer-logo">
+              <h3>IDC</h3>
+            </div>
+            <p>
+              Organisation dédiée au développement communautaire chrétien et aux
+              projets sociaux.
+            </p>
+            <div class="social-links">
+              <a href="#" class="social-link"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="social-link"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h4>Navigation</h4>
+            <ul class="footer-links">
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="a-propos.html">À-propos</a></li>
+              <li><a href="galerie.html">Galerie</a></li>
+              <li><a href="evenements.html">Événements</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Services</h4>
+            <ul class="footer-links">
+              <li><a href="projets-sociaux.html">Projets sociaux</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="boutique.html">Boutique</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Légal</h4>
+            <ul class="footer-links">
+              <li><a href="mentions-legales.html">Mentions légales</a></li>
+              <li>
+                <a href="politique-confidentialite.html"
+                  >Politique de confidentialité</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 IDC. Tous droits réservés.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="donation.js"></script>
+  </body>
+</html>

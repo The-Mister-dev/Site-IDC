@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boutique - IDC</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="icon" type="image/png" href="Images/IDC-TANSPARENT.png" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <nav class="nav">
+        <div class="nav-container">
+          <div class="nav-logo">
+            <a href="index.html"
+              ><img src="Images/IDC-TRANSPARENT-NOIR.png" alt="Logo"
+            /></a>
+          </div>
+          <div class="nav-menu" id="nav-menu">
+            <ul class="nav-list">
+              <li><a href="index.html" class="nav-link">Accueil</a></li>
+              <li><a href="a-propos.html" class="nav-link">À-propos</a></li>
+              <li><a href="galerie.html" class="nav-link">Galerie</a></li>
+              <li><a href="evenements.html" class="nav-link">Événements</a></li>
+              <li>
+                <a href="projets-sociaux.html" class="nav-link"
+                  >Projets sociaux</a
+                >
+              </li>
+              <li><a href="blog.html" class="nav-link">Blog</a></li>
+              <li>
+                <a href="boutique.html" class="nav-link active">Boutique</a>
+              </li>
+              <li><a href="contact.html" class="nav-link">Contact</a></li>
+              <li>
+                <a href="don.html" class="nav-link btn-don">Faire un don</a>
+              </li>
+            </ul>
+          </div>
+          <div class="nav-toggle" id="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <h1 class="page-title fade-in">Boutique Solidaire</h1>
+          <div class="section-separator"></div>
+          <p class="page-description fade-in">
+            Nos articles soutiennent directement nos projets sociaux
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="shop-info fade-in">
+            <div class="info-card">
+              <i class="fas fa-heart"></i>
+              <h3>Achat Solidaire</h3>
+              <p>100% des bénéfices sont reversés à nos projets sociaux</p>
+            </div>
+            <div class="info-card">
+              <i class="fas fa-leaf"></i>
+              <h3>Produits Éthiques</h3>
+              <p>
+                Articles respectueux de l'environnement et du commerce équitable
+              </p>
+            </div>
+            <div class="info-card">
+              <i class="fas fa-shipping-fast"></i>
+              <h3>Livraison Rapide</h3>
+              <p>Commande via WhatsApp pour un service personnalisé</p>
+            </div>
+          </div>
+
+          <div class="products-grid">
+            <div class="product-card fade-in">
+              <div class="product-image">
+                <img src="Images/T-SHIRT IDC 2.jpg" alt="T-shirt IDC" />
+                <div class="product-badge">Nouveau</div>
+              </div>
+              <div class="product-info">
+                <h3 class="product-name">T-shirt IDC</h3>
+                <p class="product-description">
+                  T-shirt en coton bio avec logo IDC brodé. Disponible en
+                  plusieurs couleurs.
+                </p>
+                <div class="product-price">0 FCFA</div>
+                <button
+                  class="btn btn-primary product-btn"
+                  onclick="orderWhatsApp('T-shirt IDC', '0 FCFA')"
+                >
+                  <i class="fab fa-whatsapp"></i>
+                  Commander
+                </button>
+              </div>
+            </div>
+
+            <div class="product-card fade-in">
+              <div class="product-image">
+                <img src="Images/SAC.jpeg" alt="SAC Éco-responsable" />
+              </div>
+              <div class="product-info">
+                <h3 class="product-name">SAC Éco-responsable</h3>
+                <p class="product-description">
+                  Sac en toile naturelle, pratique pour les courses et parfait
+                  pour l'environnement.
+                </p>
+                <div class="product-price">0 FCFA</div>
+                <button
+                  class="btn btn-primary product-btn"
+                  onclick="orderWhatsApp('Tote Bag Éco-responsable', '0 FCFA')"
+                >
+                  <i class="fab fa-whatsapp"></i>
+                  Commander
+                </button>
+              </div>
+            </div>
+
+            <div class="product-card fade-in">
+              <div class="product-image">
+                <img src="Images/MUGS.jpeg" alt="Mug" />
+                <div class="product-badge sale">Promo</div>
+              </div>
+              <div class="product-info">
+                <h3 class="product-name">Mug</h3>
+                <p class="product-description">
+                  Mug en céramique avec citation inspirante. Parfait pour vos
+                  pauses café engagées.
+                </p>
+                <div class="product-price">
+                  <span class="old-price">0 FCFA</span>
+                  <span class="current-price">0 FCFA</span>
+                </div>
+                <button
+                  class="btn btn-primary product-btn"
+                  onclick="orderWhatsApp('Mug Solidaire', '0 FCFA')"
+                >
+                  <i class="fab fa-whatsapp"></i>
+                  Commander
+                </button>
+              </div>
+            </div>
+
+            <div class="product-card fade-in">
+              <div class="product-image">
+                <img src="Images/CARNET.jpeg" alt="Carnet" />
+              </div>
+              <div class="product-info">
+                <h3 class="product-name">Carnet de Notes</h3>
+                <p class="product-description">
+                  Carnet format A5 en papier recyclé, idéal pour vos notes et
+                  projets créatifs.
+                </p>
+                <div class="product-price">0 FCFA</div>
+                <button
+                  class="btn btn-primary product-btn"
+                  onclick="orderWhatsApp('Carnet de Notes', '0 FCFA')"
+                >
+                  <i class="fab fa-whatsapp"></i>
+                  Commander
+                </button>
+              </div>
+            </div>
+
+            <div class="product-card fade-in">
+              <div class="product-image">
+                <img src="Images/T-SHIRT IDC2.jpg" alt="Sweat" />
+              </div>
+              <div class="product-info">
+                <h3 class="product-name">T-shirt noir IDC</h3>
+                <p class="product-description">
+                  Sweat-shirt confortable en coton bio, parfait pour afficher
+                  votre soutien à nos causes.
+                </p>
+                <div class="product-price">0 FCFA</div>
+                <button
+                  class="btn btn-primary product-btn"
+                  onclick="orderWhatsApp('T-shirt noir IDC', '0 FCFA')"
+                >
+                  <i class="fab fa-whatsapp"></i>
+                  Commander
+                </button>
+              </div>
+            </div>
+
+            <div class="product-card fade-in">
+              <div class="product-image">
+                <img src="Images/IDC.jpg" alt="Badges" />
+              </div>
+              <div class="product-info">
+                <h3 class="product-name">Pack de Badges</h3>
+                <p class="product-description">
+                  Set de 5 badges avec messages positifs et logo IDC. Parfait
+                  pour personnaliser vos affaires.
+                </p>
+                <div class="product-price">0 FCFA</div>
+                <button
+                  class="btn btn-primary product-btn"
+                  onclick="orderWhatsApp('Pack de Badges', '0 FCFA')"
+                >
+                  <i class="fab fa-whatsapp"></i>
+                  Commander
+                </button>
+              </div>
+            </div>
+
+            <div class="product-card fade-in">
+              <div class="product-image">
+                <img src="Images/T-shirt IDC.jpg" alt="Poster" />
+              </div>
+              <div class="product-info">
+                <h3 class="product-name">Poster Motivationnel</h3>
+                <p class="product-description">
+                  Poster A3 avec design inspirant sur le développement
+                  communautaire et l'engagement social.
+                </p>
+                <div class="product-price">0 FCFA</div>
+                <button
+                  class="btn btn-primary product-btn"
+                  onclick="orderWhatsApp('Poster Motivationnel', '0 FCFA')"
+                >
+                  <i class="fab fa-whatsapp"></i>
+                  Commander
+                </button>
+              </div>
+            </div>
+
+            <div class="product-card fade-in">
+              <div class="product-image">
+                <img src="Images/chapeau.jpg" alt="Casquette" />
+              </div>
+              <div class="product-info">
+                <h3 class="product-name">Casquette IDC</h3>
+                <p class="product-description">
+                  Casquette ajustable en coton avec broderie IDC. Style
+                  décontracté pour tous les jours.
+                </p>
+                <div class="product-price">0 FCFA</div>
+                <button
+                  class="btn btn-primary product-btn"
+                  onclick="orderWhatsApp('Casquette IDC', '0 FCFA')"
+                >
+                  <i class="fab fa-whatsapp"></i>
+                  Commander
+                </button>
+              </div>
+            </div>
+
+            <div class="product-card fade-in">
+              <div class="product-image">
+                <img src="Images/letter-page.jpg" alt="Agenda" />
+                <div class="product-badge">Populaire</div>
+              </div>
+              <div class="product-info">
+                <h3 class="product-name">Agenda 2024 Solidaire</h3>
+                <p class="product-description">
+                  Agenda annuel avec citations inspirantes et calendrier des
+                  événements IDC.
+                </p>
+                <div class="product-price">0 FCFA</div>
+                <button
+                  class="btn btn-primary product-btn"
+                  onclick="orderWhatsApp('Agenda 2024 Solidaire', '0 FCFA')"
+                >
+                  <i class="fab fa-whatsapp"></i>
+                  Commander
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="footer-logo">
+              <h3>IDC</h3>
+            </div>
+            <p>
+              Organisation dédiée au développement communautaire chrétien et aux
+              projets sociaux.
+            </p>
+            <div class="social-links">
+              <a href="#" class="social-link"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="social-link"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h4>Navigation</h4>
+            <ul class="footer-links">
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="a-propos.html">À-propos</a></li>
+              <li><a href="galerie.html">Galerie</a></li>
+              <li><a href="evenements.html">Événements</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Services</h4>
+            <ul class="footer-links">
+              <li><a href="projets-sociaux.html">Projets sociaux</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="boutique.html">Boutique</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Légal</h4>
+            <ul class="footer-links">
+              <li><a href="mentions-legales.html">Mentions légales</a></li>
+              <li>
+                <a href="politique-confidentialite.html"
+                  >Politique de confidentialité</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 IDC. Tous droits réservés.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="shop.js"></script>
+  </body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - IDC</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <nav class="nav">
+        <div class="nav-container">
+          <div class="nav-logo">
+            <a href="index.html"
+              ><img src="Images/IDC-TRANSPARENT-NOIR.png" alt="Logo"
+            /></a>
+          </div>
+          <div class="nav-menu" id="nav-menu">
+            <ul class="nav-list">
+              <li><a href="index.html" class="nav-link">Accueil</a></li>
+              <li><a href="a-propos.html" class="nav-link">À-propos</a></li>
+              <li><a href="galerie.html" class="nav-link">Galerie</a></li>
+              <li><a href="evenements.html" class="nav-link">Événements</a></li>
+              <li>
+                <a href="projets-sociaux.html" class="nav-link"
+                  >Projets sociaux</a
+                >
+              </li>
+              <li><a href="blog.html" class="nav-link">Blog</a></li>
+              <li><a href="boutique.html" class="nav-link">Boutique</a></li>
+              <li>
+                <a href="contact.html" class="nav-link active">Contact</a>
+              </li>
+              <li>
+                <a href="don.html" class="nav-link btn-don">Faire un don</a>
+              </li>
+            </ul>
+          </div>
+          <div class="nav-toggle" id="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <h1 class="page-title fade-in">Contactez-nous</h1>
+          <div class="section-separator"></div>
+          <p class="page-description fade-in">
+            Nous sommes là pour vous écouter et répondre à vos questions
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="contact-wrapper">
+            <div class="contact-info fade-in">
+              <h2>Nos coordonnées</h2>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="contact-text">
+                  <h3>Adresse</h3>
+                  <p>123 Rue de la République<br />Abidjan, Côte d'Ivoire</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <div class="contact-text">
+                  <h3>Téléphone</h3>
+                  <p>+225 07 13 60 44 82</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="contact-text">
+                  <h3>Email</h3>
+                  <p>contact@idc-organisation.com</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-clock"></i>
+                </div>
+                <div class="contact-text">
+                  <h3>Horaires</h3>
+                  <p>Lun - Ven: 9h00 - 18h00<br />Sam: 9h00 - 12h00</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-form-wrapper fade-in">
+              <form class="contact-form" id="contact-form">
+                <h2>Envoyez-nous un message</h2>
+                <div class="form-group">
+                  <label for="name">Nom complet *</label>
+                  <input type="text" id="name" name="name" required />
+                  <span class="error-message"></span>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email *</label>
+                  <input type="email" id="email" name="email" required />
+                  <span class="error-message"></span>
+                </div>
+                <div class="form-group">
+                  <label for="subject">Sujet *</label>
+                  <input type="text" id="subject" name="subject" required />
+                  <span class="error-message"></span>
+                </div>
+                <div class="form-group">
+                  <label for="message">Message *</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="6"
+                    required
+                  ></textarea>
+                  <span class="error-message"></span>
+                </div>
+                <button type="submit" class="btn btn-primary">
+                  Envoyer le message
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <div class="map-section fade-in">
+            <h2>Où nous trouver</h2>
+            <div class="map-container">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63459.73483999989!2d-4.041918841906255!3d5.33335321663113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfc1eb85ed363771%3A0x882828c1e69352f!2sLe%20Plateau%2C%20Abidjan%2C%20C%C3%B4te%20d'Ivoire!5e0!3m2!1sfr!2sfr!4v1672852435871!5m2!1sfr!2sfr"
+                width="100%"
+                height="400"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="footer-logo">
+              <h3>IDC</h3>
+            </div>
+            <p>
+              Organisation dédiée au développement communautaire chrétien et aux
+              projets sociaux.
+            </p>
+            <div class="social-links">
+              <a href="#" class="social-link"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="social-link"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h4>Navigation</h4>
+            <ul class="footer-links">
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="a-propos.html">À-propos</a></li>
+              <li><a href="galerie.html">Galerie</a></li>
+              <li><a href="evenements.html">Événements</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Services</h4>
+            <ul class="footer-links">
+              <li><a href="projets-sociaux.html">Projets sociaux</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="boutique.html">Boutique</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Légal</h4>
+            <ul class="footer-links">
+              <li><a href="mentions-legales.html">Mentions légales</a></li>
+              <li>
+                <a href="politique-confidentialite.html"
+                  >Politique de confidentialité</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 IDC. Tous droits réservés.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="contact.js"></script>
+  </body>
+</html>

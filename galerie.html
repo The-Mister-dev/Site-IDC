@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galerie - IDC</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="icon" type="image/png" href="Images/IDC-TANSPARENT.png" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <nav class="nav">
+        <div class="nav-container">
+          <div class="nav-logo">
+            <a href="index.html"
+              ><img src="Images/IDC-TRANSPARENT-NOIR.png" alt="Logo"
+            /></a>
+          </div>
+          <div class="nav-menu" id="nav-menu">
+            <ul class="nav-list">
+              <li><a href="index.html" class="nav-link">Accueil</a></li>
+              <li><a href="a-propos.html" class="nav-link">À-propos</a></li>
+              <li>
+                <a href="galerie.html" class="nav-link active">Galerie</a>
+              </li>
+              <li><a href="evenements.html" class="nav-link">Événements</a></li>
+              <li>
+                <a href="projets-sociaux.html" class="nav-link"
+                  >Projets sociaux</a
+                >
+              </li>
+              <li><a href="blog.html" class="nav-link">Blog</a></li>
+              <li><a href="boutique.html" class="nav-link">Boutique</a></li>
+              <li><a href="contact.html" class="nav-link">Contact</a></li>
+              <li>
+                <a href="don.html" class="nav-link btn-don">Faire un don</a>
+              </li>
+            </ul>
+          </div>
+          <div class="nav-toggle" id="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <h1 class="page-title fade-in">Galerie</h1>
+          <div class="section-separator"></div>
+          <p class="page-description fade-in">
+            Découvrez nos projets et événements en images
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="gallery-grid">
+            <div class="gallery-item fade-in" data-category="events">
+              <img
+                src="https://images.pexels.com/photos/1181396/pexels-photo-1181396.jpeg?auto=compress&cs=tinysrgb&w=500"
+                alt="Événement communautaire"
+                loading="lazy"
+              />
+              <div class="gallery-overlay">
+                <div class="gallery-info">
+                  <h3>Événement communautaire</h3>
+                  <p>Rassemblement annuel 2024</p>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item fade-in" data-category="projects">
+              <img
+                src="https://images.pexels.com/photos/1181317/pexels-photo-1181317.jpeg?auto=compress&cs=tinysrgb&w=500"
+                alt="Projet social"
+                loading="lazy"
+              />
+              <div class="gallery-overlay">
+                <div class="gallery-info">
+                  <h3>Projet éducatif</h3>
+                  <p>Programme d'alphabétisation</p>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item fade-in" data-category="events">
+              <img
+                src="https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg?auto=compress&cs=tinysrgb&w=500"
+                alt="Conférence"
+                loading="lazy"
+              />
+              <div class="gallery-overlay">
+                <div class="gallery-info">
+                  <h3>Conférence</h3>
+                  <p>Développement durable</p>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item fade-in" data-category="projects">
+              <img
+                src="https://images.pexels.com/photos/1181472/pexels-photo-1181472.jpeg?auto=compress&cs=tinysrgb&w=500"
+                alt="Projet environnemental"
+                loading="lazy"
+              />
+              <div class="gallery-overlay">
+                <div class="gallery-info">
+                  <h3>Projet vert</h3>
+                  <p>Plantation d'arbres</p>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item fade-in" data-category="team">
+              <img
+                src="https://images.pexels.com/photos/1181673/pexels-photo-1181673.jpeg?auto=compress&cs=tinysrgb&w=500"
+                alt="Équipe IDC"
+                loading="lazy"
+              />
+              <div class="gallery-overlay">
+                <div class="gallery-info">
+                  <h3>Notre équipe</h3>
+                  <p>Réunion de travail</p>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item fade-in" data-category="events">
+              <img
+                src="https://images.pexels.com/photos/1181684/pexels-photo-1181684.jpeg?auto=compress&cs=tinysrgb&w=500"
+                alt="Formation"
+                loading="lazy"
+              />
+              <div class="gallery-overlay">
+                <div class="gallery-info">
+                  <h3>Formation</h3>
+                  <p>Développement des compétences</p>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item fade-in" data-category="projects">
+              <img
+                src="https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=500"
+                alt="Projet santé"
+                loading="lazy"
+              />
+              <div class="gallery-overlay">
+                <div class="gallery-info">
+                  <h3>Projet santé</h3>
+                  <p>Campagne de prévention</p>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item fade-in" data-category="team">
+              <img
+                src="https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg?auto=compress&cs=tinysrgb&w=500"
+                alt="Bénévoles"
+                loading="lazy"
+              />
+              <div class="gallery-overlay">
+                <div class="gallery-info">
+                  <h3>Nos bénévoles</h3>
+                  <p>Action solidaire</p>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item fade-in" data-category="events">
+              <img
+                src="https://images.pexels.com/photos/1181697/pexels-photo-1181697.jpeg?auto=compress&cs=tinysrgb&w=500"
+                alt="Célébration"
+                loading="lazy"
+              />
+              <div class="gallery-overlay">
+                <div class="gallery-info">
+                  <h3>Célébration</h3>
+                  <p>Fête de fin d'année</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+      <div class="lightbox-content">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-image" id="lightbox-image" src="" alt="" />
+        <div class="lightbox-info">
+          <h3 class="lightbox-title" id="lightbox-title"></h3>
+          <p class="lightbox-description" id="lightbox-description"></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="footer-logo">
+              <h3>IDC</h3>
+            </div>
+            <p>
+              Organisation dédiée au développement communautaire chrétien et aux
+              projets sociaux.
+            </p>
+            <div class="social-links">
+              <a href="#" class="social-link"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="social-link"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h4>Navigation</h4>
+            <ul class="footer-links">
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="a-propos.html">À-propos</a></li>
+              <li><a href="galerie.html">Galerie</a></li>
+              <li><a href="evenements.html">Événements</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Services</h4>
+            <ul class="footer-links">
+              <li><a href="projets-sociaux.html">Projets sociaux</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="boutique.html">Boutique</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Légal</h4>
+            <ul class="footer-links">
+              <li><a href="mentions-legales.html">Mentions légales</a></li>
+              <li>
+                <a href="politique-confidentialite.html"
+                  >Politique de confidentialité</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 IDC. Tous droits réservés.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="lightbox.js"></script>
+  </body>
+</html>
